@@ -14,7 +14,7 @@
 | path to your installation.
 |
 */
-$config['base_url']	= 'http://cibase/';
+$config['base_url']	= 'http://cibase.loc';
 
 /*
 |--------------------------------------------------------------------------

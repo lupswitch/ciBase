@@ -382,6 +382,7 @@ class Layout {
         if(!empty($this->_parts)){
             foreach($this->_parts as $part){
                 $data[$part] = $this->_CI->load->view(''.$this->_siteSide.'/layout/'.$this->_themeName.'/'.$part,$this->_partsData[$part],true);
+                $this->_loadConfig('../views/'.$this->_siteSide.'/layout/'.$this->_themeName.'/config/config','none',$part);// load scripts for layout part
             }
         }
 

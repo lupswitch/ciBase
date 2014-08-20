@@ -6,7 +6,11 @@ class MY_Controller extends CI_Controller {
     function __construct() {
         parent::__construct();
         if ($this->uri->segment(1) !== 'admin') {
-            $this->layout = new Layout(array('siteSide' => 'frontend','themeName' => 'main'));
+            $this->load->library('Layout',array('siteSide' => 'frontend','themeName' => 'main'));
+            //$this->layout = new Layout(array('siteSide' => 'frontend','themeName' => 'main'));
+        }else{
+            $this->load->library('Layout',array('siteSide' => 'admin','themeName' => 'main'));
+            //$this->layout = new Layout(array('siteSide' => 'admin','themeName' => 'main'));
         }
     }
 }

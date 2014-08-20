@@ -69,6 +69,7 @@ class Layout {
                 $this->_themeName = $params['themeName'];
             }
         }
+        $this->setParts(array('header','footer'));
         $this->_loadConfig();
     }
 

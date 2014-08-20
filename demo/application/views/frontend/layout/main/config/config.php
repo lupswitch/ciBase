@@ -4,6 +4,7 @@ $config['title'] = 'My Site';
 $config['metas'] = array(
     array('charset' => 'utf-8')
 );
+
 $config['links'] = array(
     array('href' => '/assets/library/Bootstrap-3.1.1/css/bootstrap.min.css'),
 );

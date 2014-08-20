@@ -5,21 +5,11 @@
     <header>
         <?php echo isset($header)? $header : ''; ?>
     </header>
-    <section id="content" class="container">
+    <section id="content" class="container-fluid">
         <div class="row">
-            <div class="col-xs-2">
-                <?php echo isset($leftSide)? $leftSide : ''; ?>
-            </div>
-            <div class="col-xs-8">
-                <?php echo isset($content)? $content : ''; ?>
-            </div>
-            <div class="col-xs-2">
-                <?php echo isset($rightSide)? $rightSide : ''; ?>
-            </div>
+            <?php echo isset($leftSide)? $leftSide : ''; ?>
+            <?php echo isset($content)? $content : ''; ?>
         </div>
     </section>
-    <footer>
-        <?php echo isset($footer)? $footer : ''; ?>
-    </footer>
 </body>
 </html>
